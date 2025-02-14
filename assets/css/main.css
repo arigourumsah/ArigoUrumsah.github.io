@@ -241,6 +241,52 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.home-link {
+		position: absolute; /* Position relative to the header */
+  		top: 1em; /* Adjust distance from the top */
+  		right: 3em; /* Adjust distance from the right */
+		/* right: 50%;
+  		transform: translateX(50%); Ensures alignment with profile picture */
+		display: inline-block;
+		padding: 10px;
+		padding: 0.8em 1.5em;
+		color: rgba(255, 255, 255, 0.5);
+		transition: all 0.25s ease-in-out;
+    	background-color: rgba(0, 0, 0, 0.2); /* Subtle background */
+    	border-radius: 5px;
+	}
+	  
+	.home-link i {
+		margin-right: 0.5em; 
+		font-size: 1.5em;
+	}
+
+	.home-link:hover {
+		color: #fff;
+		background: rgba(255, 255, 255, 0.05);
+		/* background-color: rgba(255, 255, 255, 0.2); Slightly darker hover effect */
+  		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+	}
+	  
+	.home-link .fa-home {
+		margin-right: 0.8em;
+		font-size: 1.2em;
+	}
+
+	.main-nav ul {
+		list-style-type: none; /* Removes bullets */
+		padding: 0; /* Removes default padding */
+		margin: 0;
+	  }
+	  
+	  /* .main-nav li {
+		margin-bottom: 15px;
+	  } */
+
+	  .hidden {
+		display: none;
+	  }
+
 /* Container */
 
 	.container {
@@ -3235,49 +3281,3 @@ input, select, textarea {
 			}
 
 	}
-
-	.home-link {
-		position: absolute; /* Position relative to the header */
-  		top: 1em; /* Adjust distance from the top */
-  		right: 3em; /* Adjust distance from the right */
-		/* right: 50%;
-  		transform: translateX(50%); Ensures alignment with profile picture */
-		display: inline-block;
-		padding: 10px;
-		padding: 0.8em 1.5em;
-		color: rgba(255, 255, 255, 0.5);
-		transition: all 0.25s ease-in-out;
-    	background-color: rgba(0, 0, 0, 0.2); /* Subtle background */
-    	border-radius: 5px;
-	}
-	  
-	.home-link i {
-		margin-right: 0.5em; 
-		font-size: 1.5em;
-	}
-
-	.home-link:hover {
-		color: #fff;
-		background: rgba(255, 255, 255, 0.05);
-		/* background-color: rgba(255, 255, 255, 0.2); Slightly darker hover effect */
-  		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-	}
-	  
-	.home-link .fa-home {
-		margin-right: 0.8em;
-		font-size: 1.2em;
-	}
-
-	.main-nav ul {
-		list-style-type: none; /* Removes bullets */
-		padding: 0; /* Removes default padding */
-		margin: 0;
-	  }
-	  
-	  /* .main-nav li {
-		margin-bottom: 15px;
-	  } */
-
-	  .hidden {
-		display: none;
-	  }
