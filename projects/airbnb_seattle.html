@@ -14,16 +14,29 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="../images/avatar.jpg" alt="" /></a>
-					<h1><strong>Bintang Arigo Kautsar Urumsah</strong><br />
-					</h1>
-					<h1><strong>I am Arigo</strong>, a Software Engineer turned<br />
-					Data Analyst proficient in SQL, Python, Tableau, and STATA.<br />
-					</h1>
-				</div>
-			</header>
+		<header id="header">
+			<nav class="main-nav">
+				<ul>
+				  <li>
+					<a href="../index.html" class="home-link">
+					  <i class="fas fa-home"></i>
+					  <span class="label">Home</span>
+					</a>
+				  </li>
+				  <!-- Existing nav items -->
+				</ul>
+			  </nav>
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="../images/avatar.jpg" alt="" /></a><br />
+				<!-- <a href="../index.html" class="button"><h1><strong>HOME</strong><br /></h1></a> -->
+				<!-- <li><a href="#" class="icon solid fa-home"><span class="label">Home Page</span></a></li> -->
+				<h1><strong>Bintang Arigo Kautsar Urumsah</strong><br />
+				</h1>
+				<h1><strong>I am Arigo</strong>, a Software Engineer turned<br />
+				Data Analyst proficient in SQL, Python, Tableau, and STATA.<br />
+				</h1>
+			</div>
+		</header>
 
 		<!-- Main -->
 			<div id="main">
@@ -31,24 +44,68 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Investigating Factors Influencing Internet Usage Using STATA</h2>
+							<h2>AirBnB Listings Visualization Using Tableau</h2>
 						</header>
-						<p>This analysis explores the factors influencing Information and Communications Technology (ICT) growth, measured by access to the internet, as an outcome shaped by social, economic, and political factors. Using combined panel dataset from 218 countries (1990–2010), it examines the impacts of educational inequality, political competition, GDP per capita, and foreign direct investment (FDI). Results show that economic prosperity and in flows of FDI boost ICT adoption, while educational inequality exacerbates digital divides. Reduced political competition correlates with broader ICT penetration, highlighting the role of governance in shaping digital access. The findings emphasize addressing structural inequalities, fostering inclusive policies, and promoting FDI to bridge global digital divides and advance sustainable ICT expansion.</p>
-						<h3>Dataset</h3>
-						<a href="../images/ict_growth/dataset.png" class="image fit thumb"><img src="../images/ict_growth/dataset.png" alt="Dataset" /></a>
-						<p>Dataset consists of 4 variables: internet usage, GDP per capita, population, and year. The dataset is used to investigate the factors influencing internet usage.</p>
-						<a href="../images/ict_growth/descriptive_statistics.png" class="image fit thumb"><img src="../images/ict_growth/descriptive_statistics.png" alt="descriptive_statistics" /></a>
-						<a href="../images/ict_growth/internet_usage_graph.png" class="image fit thumb"><img src="../images/ict_growth/internet_usage_graph.png" alt="Internet Usage Graph" /></a>
-						<a href="../images/ict_growth/relationship_edu_ineq.png" class="image fit thumb"><img src="../images/ict_growth/relationship_edu_ineq.png" alt="ICT Growth" /></a>
-						<a href="../images/ict_growth/relationship_polcomp.png" class="image fit thumb"><img src="../images/ict_growth/relationship_polcomp.png" alt="ICT Growth" /></a>
-						<a href="../images/ict_growth/relationship_gdppc.png" class="image fit thumb"><img src="../images/ict_growth/relationship_gdppc.png" alt="ICT Growth" /></a>
-						<a href="../images/ict_growth/relationship_fdi.png" class="image fit thumb"><img src="../images/ict_growth/relationship_fdi.png" alt="ICT Growth" /></a>
-						<h3>Results</h3>
-						<!-- <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p> -->
-						<a href="../images/ict_growth/main_results.png" class="image fit thumb"><img src="../images/ict_growth/main_results.png" alt="Main Results" /></a>
-						<a href="../images/ict_growth/regional_results.png" class="image fit thumb"><img src="../images/ict_growth/regional_results.png" alt="Regional Analysis" /></a>
+						<p>
+							In this project, I analyzed Airbnb listing data using Tableau to uncover key insights into pricing trends, listing distribution, and revenue potential. The analysis focused on identifying patterns in pricing across different bedroom counts, zip codes, and time periods. Below is a summary of the findings and visualizations included in the dashboard.
+						</p>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="../images/airbnb_seattle/airbnb_seattle.png" class="image fit thumb"><img src="../images/airbnb_seattle/airbnb_seattle.png" alt="Airbnb Listings Tableau Dashboard" /></a>
+							<h2 class="hidden">AirBnB Listings Tableau Dashboard</h2>
+						</article>
+						<ul class="actions">
+							<li><a href="https://public.tableau.com/app/profile/bintang.arigo.kautsar.urumsah/viz/AirBnBsinSeattleAnalysis_17388738403420/Dashboard1?publish=yes" class="button">Tableau Dashboard</a></li>
+						</ul>
+						<h3>Insights from the Visualization</h3>
+						<p>
+							<strong>Average Price by Bedroom Count:</strong><br />
+							Listings with more bedrooms generally have higher average prices. For example:<br />
+							<ul>
+								<li>1-bedroom listings average $96.2.</li>
+								<li>2-bedroom listings average $175.4.</li>
+								<li>6-bedroom listings command the highest average price at $584.8.</li>
+							</ul>
+							The data highlights a clear upward trend in pricing as bedroom count increases, reflecting the value of larger accommodations.
+						</p>
+						<p>
+							<strong>Number of Listings by Bedroom Count:</strong><br />
+							The majority of listings are 1-bedroom units (1,811), followed by 2-bedroom units (483). Larger properties (4-6 bedrooms) are significantly less common, indicating a niche market for larger accommodations.
+						</p>
+						<p>
+							<strong>Price Trends by Zip Code:</strong><br />
+							Average prices vary widely across zip codes, with some areas commanding higher premiums. For instance:<br />
+							<ul>
+								<li>Zip code 98119 has the highest average price.</li>
+								<li>Other zip codes such as 98101 and 98102 also show competitive pricing.</li>
+							</ul>
+							A geographic map visualization provides a clear spatial representation of pricing trends.
+						</p>
+						<p>
+							<strong>Revenue Trends Over Time:</strong><br />
+							Revenue steadily increased throughout the year, peaking in later months. This suggests strong seasonal demand for Airbnb listings, which could be leveraged for dynamic pricing strategies.
+						</p>
+						<h3>Visualization Techniques</h3>
+						<p>
+							<strong>Bar Charts</strong> were used to compare average prices across bedroom counts and zip codes, making it easy to identify trends at a glance.
+						</p>
+						<p>
+							<strong>A Geographic Map</strong> was employed to visualize price variations by location, adding a spatial dimension to the analysis.
+						</p>
+						<p>
+							<strong>Line Chart</strong> tracked revenue growth over time, illustrating seasonal trends and overall performance.
+						</p>
+						<h3>Impact and Applications</h3>
+						<p>
+							This analysis provides actionable insights for Airbnb hosts and property managers:<br />
+							<ul>
+								<li>Optimize pricing strategies based on bedroom count and location.</li>
+								<li>Identify high-demand zip codes for potential property investments.</li>
+								<li>Adjust pricing dynamically based on seasonal revenue trends.</li>
+							</ul>
+							This project demonstrates my ability to use Tableau for data visualization and storytelling, transforming raw data into meaningful insights that drive decision-making. By combining statistical analysis with intuitive visuals, I delivered a comprehensive overview of Airbnb market dynamics.
+						</p>
 						<!-- <ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://public.tableau.com/app/profile/bintang.arigo.kautsar.urumsah/viz/AirBnBsinSeattleAnalysis_17388738403420/Dashboard1?publish=yes" class="button">Tableau Dashboard</a></li>
 						</ul> -->
 					</section>
 
